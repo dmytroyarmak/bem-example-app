@@ -15,7 +15,17 @@
                 content: [
                     {
                         elem: 'left',
-                        content: 'left here'
+                        content: [
+                            {
+                                block: 'icon',
+                                tag: 'img',
+                                attrs: { src: 'http://varya.me/online-shop-dummy/desktop.blocks/b-logo/b-logo.png'}
+                            },
+                            {
+                                elem: 'slogan',
+                                content: 'A new way of thinking'
+                            }
+                        ]
                     },
                     {
                         elem: 'right',
