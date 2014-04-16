@@ -4,12 +4,14 @@
     favicon: '/favicon.ico',
     head: [
         { elem: 'meta', attrs: { name: 'description', content: '' }},
-        { elem: 'css', url: '_index.css' }
+        { elem: 'css', url: '_index.css' },
+        { elem: 'css', url: '_index.ie.css', ie: 'IE' }
     ],
     scripts: [{ elem: 'js', url: '_index.js' }],
     content: [
         {
             block: 'head',
+            mix: [ { block: 'box' } ],
             content: {
                 block: 'layout',
                 content: [

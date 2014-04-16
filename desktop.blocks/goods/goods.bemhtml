@@ -8,6 +8,7 @@ block('goods')(
                 {
                     elem: 'item',
                     mods: { new: item.new ? 'yes' : undefined },
+                    mix: { block: 'box' },
                     content: [
                         {
                             elem: 'title',
@@ -52,5 +53,4 @@ block('goods')(
     elem('price')(
         tag()('span')
     )
-
 )
