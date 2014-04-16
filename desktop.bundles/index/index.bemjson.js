@@ -17,7 +17,7 @@
                         elem: 'left',
                         content: {
                             tag: 'form',
-                            attrs: { action: 'http://yandex.ru/yandsearch'},
+                            attrs: { action: 'http://yandex.ru/yandsearch' },
                             content: [
                                 {
                                     block: 'input',
@@ -38,13 +38,18 @@
                             block: 'logo',
                             content: [
                                 {
-                                    block: 'icon',
-                                    tag: 'img',
-                                    attrs: { src: 'http://varya.me/online-shop-dummy/desktop.blocks/b-logo/b-logo.png' }
-                                },
-                                {
-                                    elem: 'slogan',
-                                    content: 'A new way of thinking'
+                                    block: 'link',
+                                    url: 'http://ru.bem.info',
+                                    content: [
+                                        {
+                                            block: 'image',
+                                            attrs: { src: 'http://varya.me/online-shop-dummy/desktop.blocks/b-logo/b-logo.png' }
+                                        },
+                                        {
+                                            elem: 'slogan',
+                                            content: 'A new way of thinking'
+                                        }
+                                    ]
                                 }
                             ]
                         }
