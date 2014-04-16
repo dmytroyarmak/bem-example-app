@@ -29,7 +29,18 @@
                     },
                     {
                         elem: 'right',
-                        content: 'right here'
+                        content: [
+                            {
+                                block: 'input',
+                                name: 'text',
+                                val: 'Find'
+                            },
+                            {
+                                block: 'button',
+                                type: 'submit',
+                                content: 'Search'
+                            }
+                        ]
                     }
                 ]
             }
