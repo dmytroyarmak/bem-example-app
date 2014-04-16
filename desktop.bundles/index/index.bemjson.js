@@ -15,32 +15,39 @@
                 content: [
                     {
                         elem: 'left',
-                        content: [
-                            {
-                                block: 'icon',
-                                tag: 'img',
-                                attrs: { src: 'http://varya.me/online-shop-dummy/desktop.blocks/b-logo/b-logo.png'}
-                            },
-                            {
-                                elem: 'slogan',
-                                content: 'A new way of thinking'
-                            }
-                        ]
+                        content: {
+                            tag: 'form',
+                            attrs: { action: 'http://yandex.ru/yandsearch'},
+                            content: [
+                                {
+                                    block: 'input',
+                                    name: 'text',
+                                    val: 'Find'
+                                },
+                                {
+                                    block: 'button',
+                                    type: 'submit',
+                                    content: 'Search'
+                                }
+                            ]
+                        }
                     },
                     {
                         elem: 'right',
-                        content: [
-                            {
-                                block: 'input',
-                                name: 'text',
-                                val: 'Find'
-                            },
-                            {
-                                block: 'button',
-                                type: 'submit',
-                                content: 'Search'
-                            }
-                        ]
+                        content: {
+                            block: 'logo',
+                            content: [
+                                {
+                                    block: 'icon',
+                                    tag: 'img',
+                                    attrs: { src: 'http://varya.me/online-shop-dummy/desktop.blocks/b-logo/b-logo.png' }
+                                },
+                                {
+                                    elem: 'slogan',
+                                    content: 'A new way of thinking'
+                                }
+                            ]
+                        }
                     }
                 ]
             }
